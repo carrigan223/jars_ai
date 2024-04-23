@@ -7,6 +7,7 @@ type Props = {};
 
 const MainDisplay = (props: Props) => {
   const [loading, setLoading] = useState(true);
+  const [openColumn, setOpenColumn] = useState([false, false, false]);
   const [gradient, setGradient] = useState({
     color: "rgba(192, 77, 250)",
     colorTwo: "rgba(192, 77, 250,.5)",
@@ -45,7 +46,15 @@ const MainDisplay = (props: Props) => {
     <div>
       <div className="flex">
         {colInfo.map((col, index) => (
-          <Column key={index} color={col.color} text={col.text} num={col.num} />
+          <Column
+            key={index}
+            color={col.color}
+            text={col.text}
+            num={col.num}
+            open={openColumn[index]}
+            index={index}
+            setOpenColumn={setOpenColumn}
+          />
         ))}
       </div>
       <button
