@@ -17,27 +17,33 @@ const config: Config = {
       width: {
         pill: "132px",
         column: "83px",
+        'ran-col': '208px',
       },
       height: {
         pill: "49px",
         column: "354px",
+        'ran-col': '80px',
       },
       borderRadius: {
         pill: "24.5px",
         column: "30px",
       },
       colors: {
-        pill: "#D9D9D9"
+        pill: "#D9D9D9",
+        'ran-col': '#F5F5F3'
       },
       padding: {
         title: "28px",
       },
+      
 
 
 
       fontSize: {
         title: ["64px", "77.45px"],
         header: ["20px", "24.2px"],
+        'col-num': ['15px', '18.15px'],
+       
       },
     },
   },

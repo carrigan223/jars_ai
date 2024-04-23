@@ -2,32 +2,21 @@ import Image from "next/image";
 import TitlePill from "./components/title/TitlePill";
 import TitleStar from "./components/title/TitleStar";
 import Title from "./components/title/Title";
+import HeaderIcon from "./components/header/HeaderIcon";
+import Column from "./components/main-display/column/Column";
+import MainDisplay from "./components/main-display/MainDisplay";
 
 export default function Home() {
-  const color = "purple";
+  const color = "rgba(192, 77, 250)";
+  const colorTwo = "rgba(192, 77, 250,.5)";
+
+  const colText = "the FIRST pane";
+
   return (
     <main className="flex min-h-screen flex-col p-title">
-      <div className="flex items-center pb-10">
-        <Image src="/dreamicon.png" alt="Dream Logo" width={23} height={23} />
-        <span className="font-semibold text-xl">Dream</span>
-      </div>
+      <HeaderIcon />
       <Title />
-      <div className="flex ">
-        <div
-          style={{
-            backgroundColor: color,
-          }}
-          className="h-column border w-column mx-10    flex items-center justify-center mt-10"
-        >
-          the FIRST pane
-        </div>
-        <div className="h-column border w-column    flex items-center justify-center mt-10">
-          the FIRST pane
-        </div>
-        <div className="h-column border w-column    flex items-center justify-center mt-10">
-          the FIRST pane
-        </div>{" "}
-      </div>
+      <MainDisplay />
     </main>
   );
 }
