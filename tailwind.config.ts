@@ -35,12 +35,14 @@ const config: Config = {
       padding: {
         title: "28px",
       },
-      
+        
+     
 
 
 
       fontSize: {
         title: ["64px", "77.45px"],
+        'title-med': ['60px', '49px'],
         header: ["20px", "24.2px"],
         'col-num': ['15px', '18.15px'],
        

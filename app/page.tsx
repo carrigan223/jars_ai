@@ -13,7 +13,7 @@ export default function Home() {
   const colText = "the FIRST pane";
 
   return (
-    <main className="flex min-h-screen flex-col p-title">
+    <main className="flex min-h-screen flex-col p-title xl:gap-y-4 2xl:gap-y-8">
       <HeaderIcon />
       <Title />
       <MainDisplay />

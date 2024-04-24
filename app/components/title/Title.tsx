@@ -6,8 +6,8 @@ type Props = {};
 
 const Title = (props: Props) => {
   return (
-    <div className="text-title">
-      <div className="flex items-center">
+    <div className=" lg:text-title-med  2xl:text-title ">
+      <div className="flex items-center flex-col md:flex-row xl:pb-2 2xl:pb-0">
         <span>THE DREAM</span>
         <TitleStar />
         <div>NAVIGATOR IS YOUR</div>

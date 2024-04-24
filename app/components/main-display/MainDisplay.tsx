@@ -14,8 +14,8 @@ const MainDisplay = (props: Props) => {
   });
   const colInfo = [
     { color: gradient.color, text: "FIRST", num: "01" },
-    { color: gradient.colorTwo, text: "SECOND", num: "2" },
-    { color: gradient.colorTwo, text: "THIRD", num: "3" },
+    { color: gradient.colorTwo, text: "SECOND", num: "02" },
+    { color: gradient.colorTwo, text: "THIRD", num: "03" },
   ];
 
   useEffect(() => {
@@ -54,6 +54,7 @@ const MainDisplay = (props: Props) => {
             open={openColumn[index]}
             index={index}
             setOpenColumn={setOpenColumn}
+            openColumn={openColumn}
           />
         ))}
       </div>
