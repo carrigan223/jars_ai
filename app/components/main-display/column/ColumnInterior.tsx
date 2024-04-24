@@ -28,12 +28,11 @@ const ColumnInterior = ({ num, randomText, author, loading }: Props) => {
     if (num === "02") {
       return (
         <Image
-          src={"https://picsum.photos/400/800?" + Date.now()}
+          src={"https://picsum.photos/750/1100?" + Date.now()}
           alt="random image"
-          
-          height={400}
-          width={800}
-          objectFit="fit"
+          height={354}
+          width={750}
+          objectFit="cover"
           className="rounded-column z-10"
         />
       );
