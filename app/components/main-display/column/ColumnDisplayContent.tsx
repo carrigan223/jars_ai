@@ -27,8 +27,11 @@ const ColumnDisplayContent = ({ open, text, num }: Props) => {
   };
 
   useEffect(() => {
+    setLoading(true);
     getQuote();
-    setLoading(false);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
   }, [open]);
 
   if (open) {
